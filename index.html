@@ -18,7 +18,7 @@
   <link type="text/css" rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
   <link type="text/css" rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css"/>
   <!--custom-->
-  <link type="text/css" rel="stylesheet" href="resources/style/styles.css"/>
+  <link type="text/css" rel="stylesheet/less" href="resources/style/style.less"/>
 
 </head>
 <body>
@@ -29,7 +29,40 @@
   </section>
 
   <section class="section section-about-as">
+    Для работы с БЭМ-сущностями необходимо ознакомиться с правилами их именования.
 
+    Основная идея соглашения по именованию — сделать имена CSS-селекторов максимально информативными и понятными. Это поможет упростить разработку и отладку кода, а также решить некоторые проблемы веб-разработчиков.
+
+    В качестве примера рассмотрим CSS-селектор menuitemvisible. Быстрый просмотр такой записи не дает возможности определить типы БЭМ-сущностей по имени.
+
+    Добавим разделитель:
+
+    menu-item-visible или menuItemVisible
+
+    В таком виде имя селектора явно разделяется на логические части. Можем предположить, что menu окажется блоком, item — элементом, а visible — модификатором. Однако в реальной жизни часто возникают более сложные и не столь однозначные случаи, решить которые помогает соглашение по именованию БЭМ.
+
+    БЭМ-методология предоставляет идею по созданию правил формирования имен и свой способ ее реализации — соглашение по именованию CSS-селекторов. Однако в мире веб-разработки существует ряд альтернативных схем, основанных на принципах БЭМ.
+
+    <div class="separator separator_middle">
+      <i class="fa fa-angle-double-left separator__angle"></i>
+      <span class="separator__line"></span>
+      <i class="fa fa-circle-o separator__center" ></i>
+      <span class="separator__line"></span>
+      <i class="fa fa-angle-double-right separator__angle"></i>
+    </div>
+    Для работы с БЭМ-сущностями необходимо ознакомиться с правилами их именования.
+
+    Основная идея соглашения по именованию — сделать имена CSS-селекторов максимально информативными и понятными. Это поможет упростить разработку и отладку кода, а также решить некоторые проблемы веб-разработчиков.
+
+    В качестве примера рассмотрим CSS-селектор menuitemvisible. Быстрый просмотр такой записи не дает возможности определить типы БЭМ-сущностей по имени.
+
+    Добавим разделитель:
+
+    menu-item-visible или menuItemVisible
+
+    В таком виде имя селектора явно разделяется на логические части. Можем предположить, что menu окажется блоком, item — элементом, а visible — модификатором. Однако в реальной жизни часто возникают более сложные и не столь однозначные случаи, решить которые помогает соглашение по именованию БЭМ.
+
+    БЭМ-методология предоставляет идею по созданию правил формирования имен и свой способ ее реализации — соглашение по именованию CSS-селекторов. Однако в мире веб-разработки существует ряд альтернативных схем, основанных на принципах БЭМ.
 
   </section>
 
@@ -42,6 +75,7 @@
 
 <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="bower_components/less/dist/less.min.js"></script>
 </body>
 </html>
 

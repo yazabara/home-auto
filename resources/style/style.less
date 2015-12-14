@@ -1,0 +1,38 @@
+
+//constants
+@main-color: #c5a47e;
+
+@main-text-color: #777777;
+@main-text-font-size: 20px;
+
+//blocks
+.separator {
+  text-align: center;
+  position: relative;
+  .separator__line {
+    display: inline-block;
+    border: 1px solid @main-color;
+    margin: 3px;
+  }
+  .separator__angle {
+    color: @main-color;
+  }
+  .separator__center {
+    color: @main-color;
+  }
+}
+
+.separator_middle {
+  font-size: 20px;
+  .separator__line {
+    width: 30%;
+    margin: 5px;
+  }
+}
+
+.section {
+  color: @main-text-color;
+  font-size: @main-text-font-size;
+}
+
+
