@@ -1,9 +1,10 @@
-
 //constants
 @main-color: #c5a47e;
-
+//
 @main-text-color: #777777;
 @main-text-font-size: 20px;
+//
+@animate-rule: all 0.7s ease-out 0.1s;
 
 //blocks
 .separator {
@@ -33,6 +34,19 @@
 .section {
   color: @main-text-color;
   font-size: @main-text-font-size;
+}
+
+.animate {
+  opacity: 0;
+  -webkit-transition: @animate-rule;
+  -moz-transition: @animate-rule;
+  -o-transition: @animate-rule;
+  -ms-transition: @animate-rule;
+  transition: @animate-rule;
+}
+
+.animate.animate_visible {
+  opacity: 1;
 }
 
 
