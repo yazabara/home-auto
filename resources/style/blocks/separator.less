@@ -3,23 +3,27 @@
 .separator {
   text-align: center;
   position: relative;
+  font-size: 20px;
   .separator__line {
     display: inline-block;
     border: 1px solid @main-color;
-    margin: 3px;
+    width: 15%;
+    margin: 5px;
   }
   .separator__angle {
     color: @main-color;
   }
-}
-
-.separator_middle {
-  font-size: 20px;
-  .separator__line {
-    width: 15%;
-    margin: 5px;
+  &.separator_white {
+    .separator__angle {
+      color: @additional-text-color;
+    }
+    .separator__line {
+      border: 1px solid @additional-text-color;
+    }
   }
 }
+
+
 
 .section {
   color: @main-text-color;
