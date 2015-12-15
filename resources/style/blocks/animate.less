@@ -1,12 +1,21 @@
 @import "../constants";
+@import "../utils";
+
 
 .animate {
   opacity: 0;
-  -webkit-transition: @animate-rule;
-  -moz-transition: @animate-rule;
-  -o-transition: @animate-rule;
-  -ms-transition: @animate-rule;
-  transition: @animate-rule;
+  &:nth-child(2), &:nth-child(6) {
+    .transition(opacity 1s ease-out 0.5s);
+  }
+  &:nth-child(3), &:nth-child(7) {
+    .transition(opacity 1s ease-out 1s);
+  }
+  &:nth-child(4), &:nth-child(8) {
+    .transition(opacity 1s ease-out 1.5s);
+  }
+  &:nth-child(5), &:nth-child(9) {
+    .transition(opacity 1s ease-out 2s);
+  }
 }
 
 .animate.animate_visible {
