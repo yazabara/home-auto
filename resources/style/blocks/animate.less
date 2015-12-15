@@ -1,0 +1,14 @@
+@import "../constants";
+
+.animate {
+  opacity: 0;
+  -webkit-transition: @animate-rule;
+  -moz-transition: @animate-rule;
+  -o-transition: @animate-rule;
+  -ms-transition: @animate-rule;
+  transition: @animate-rule;
+}
+
+.animate.animate_visible {
+  opacity: 1;
+}

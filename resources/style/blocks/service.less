@@ -1,0 +1,27 @@
+@import "../constants";
+
+.service {
+
+  margin-top: 2em;
+
+  .service__icon {
+    width: 10em;
+    height: 10em;
+    margin: auto auto 2em;
+    background-color: @additional-background-color;
+    border-radius: 50%;
+    border: 5px white solid;
+    .fa {
+      font-size: 60px;
+      margin-top: 60px;
+    }
+  }
+
+  .service__icon:hover {
+    background-color: #ffffff;
+    border: 5px @additional-background-color solid;
+    .fa {
+      color: @additional-background-color;
+    }
+  }
+}

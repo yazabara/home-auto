@@ -1,52 +1,19 @@
-//constants
-@main-color: #c5a47e;
-//
-@main-text-color: #777777;
-@main-text-font-size: 20px;
-//
-@animate-rule: all 0.7s ease-out 0.1s;
+@import "constants";
+@import "blocks/header-separator";
+@import "blocks/double-diagonal-separator";
+@import "blocks/header";
+@import "blocks/animate";
+@import "blocks/service";
 
-//blocks
-.separator {
-  text-align: center;
-  position: relative;
-  .separator__line {
-    display: inline-block;
-    border: 1px solid @main-color;
-    margin: 3px;
-  }
-  .separator__angle {
-    color: @main-color;
-  }
-  .separator__center {
-    color: @main-color;
-  }
-}
-
-.separator_middle {
-  font-size: 20px;
-  .separator__line {
-    width: 30%;
-    margin: 5px;
-  }
-}
 
 .section {
-  color: @main-text-color;
-  font-size: @main-text-font-size;
+  position: relative;
+  padding: 5em 10%;
+  text-align: center;
 }
 
-.animate {
-  opacity: 0;
-  -webkit-transition: @animate-rule;
-  -moz-transition: @animate-rule;
-  -o-transition: @animate-rule;
-  -ms-transition: @animate-rule;
-  transition: @animate-rule;
+.content-wrapper {
+  overflow: hidden;
+  width: 100%;
 }
-
-.animate.animate_visible {
-  opacity: 1;
-}
-
 
