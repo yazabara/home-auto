@@ -33,7 +33,6 @@ define(['jquery', 'jqueryAppear', 'bootstrap', 'less', 'parascroll'], function (
 
     $('.parascroll').parascroll();
 
-
 });
 
 function initializeGoogleMap() {

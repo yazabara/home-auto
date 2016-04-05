@@ -28,6 +28,19 @@
 <div class="content-wrapper">
     <section class="section section-welcome">
 
+        <div id="welcome" class="text-shadow parascroll">
+            <div class="scrollable"></div>
+            <div class="paraContent">
+                <p>
+                    Наш автосервис, который расположен в г. Тверь ул. Троицкая д. 20 - готов провести полный цикл
+                    ремонта
+                    автомобиля: от кузовного ремонта до покраски! Мы выполняем качественный кузовной ремонт в Твери по
+                    доступной
+                    цене. Также, нашими специалистами проводится подготовка и покраска авто в Твери по приемлемым ценам.
+                </p>
+            </div>
+
+        </div>
 
     </section>
 
@@ -38,12 +51,10 @@
             </div>
 
             <div class="separator ">
-
                 <span class="separator__line"></span>
                 <i class="fa fa-angle-double-left separator__angle"></i>
                 <i class="fa fa-angle-double-right separator__angle"></i>
                 <span class="separator__line"></span>
-
             </div>
             Наш дружный и небольшой коллектив обладает высоким профессионализмом и большим опытом работ в данной сфере
             кузовного ремонта – около 30 лет и покраски 6 лет.
@@ -67,54 +78,6 @@
             <br/>
             <br/>
             Мы готовы проконсультировать по возникшем у Вас вопросам. Будем очень рады с вами работать.
-
-        </div>
-    </section>
-
-    <section class="section section-sasha-separator">
-
-        <div class="text-shadow parascroll">
-            <div class="scrollable"></div>
-        </div>
-
-    </section>
-
-    <section class="section section-about-as">
-        <div class="row">
-            <div class="header lobster-font">
-                <h2 class="header__text">О нашей прекрасной команде</h2>
-            </div>
-
-            <div class="separator ">
-                <span class="separator__line"></span>
-                <i class="fa fa-angle-double-left separator__angle"></i>
-                <i class="fa fa-angle-double-right separator__angle"></i>
-                <span class="separator__line"></span>
-            </div>
-            Для работы с БЭМ-сущностями необходимо ознакомиться с правилами их именования.
-
-            Основная идея соглашения по именованию — сделать имена CSS-селекторов максимально информативными и
-            понятными.
-            Это поможет упростить разработку и отладку кода, а также решить некоторые проблемы веб-разработчиков.
-
-            В качестве примера рассмотрим CSS-селектор menuitemvisible. Быстрый просмотр такой записи не дает
-            возможности
-            определить типы БЭМ-сущностей по имени.
-
-            Добавим разделитель:
-
-            menu-item-visible или menuItemVisible
-
-            В таком виде имя селектора явно разделяется на логические части. Можем предположить, что menu окажется
-            блоком,
-            item — элементом, а visible — модификатором. Однако в реальной жизни часто возникают более сложные и не
-            столь
-            однозначные случаи, решить которые помогает соглашение по именованию БЭМ.
-
-            БЭМ-методология предоставляет идею по созданию правил формирования имен и свой способ ее реализации —
-            соглашение
-            по именованию CSS-селекторов. Однако в мире веб-разработки существует ряд альтернативных схем, основанных на
-            принципах БЭМ.
         </div>
     </section>
 
@@ -130,63 +93,67 @@
                 <span class="separator__line"></span>
             </div>
             <div class="services">
-                <div class="col-md-3 service animate">
-                    <div class="service__icon">
-                        <i class="fa fa-car"></i>
+                <div class="row ">
+                    <div class="col-md-3 service animate">
+                        <div class="service__icon">
+                            <i class="fa fa-car"></i>
+                        </div>
+                        <div class="service__header lobster-font">
+                            Кузовной ремонт
+                        </div>
                     </div>
-                    <div class="service__header lobster-font">
-                        Кузовной ремонт
+                    <div class="col-md-3 service animate">
+                        <div class="service__icon">
+                            <i class="fa fa-cogs"></i>
+                        </div>
+                        <div class="service__header lobster-font">
+                            Ремонт бамперов
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-3 service animate">
-                    <div class="service__icon">
-                        <i class="fa fa-cogs"></i>
+                    <div class="col-md-3 service animate">
+                        <div class="service__icon">
+                            <i class="fa fa-paint-brush"></i>
+                        </div>
+                        <div class="service__header lobster-font">
+                            Покраска автомобилей
+                        </div>
                     </div>
-                    <div class="service__header lobster-font">
-                        Ремонт бамперов
-                    </div>
-                </div>
-                <div class="col-md-3 service animate">
-                    <div class="service__icon">
-                        <i class="fa fa-paint-brush"></i>
-                    </div>
-                    <div class="service__header lobster-font">
-                        Покраска автомобилей
-                    </div>
-                </div>
-                <div class="col-md-3 service animate">
-                    <div class="service__icon">
-                        <i class="fa fa-eyedropper"></i>
-                    </div>
-                    <div class="service__header lobster-font">
-                        Локальная покраска
+                    <div class="col-md-3 service animate">
+                        <div class="service__icon">
+                            <i class="fa fa-eyedropper"></i>
+                        </div>
+                        <div class="service__header lobster-font">
+                            Локальная покраска
+                        </div>
                     </div>
                 </div>
                 <!--next row-->
-                <div class="col-md-3 service animate">
-                    <div class="service__icon">
-                        <i class="fa fa-road"></i>
+                <div class="row ">
+                    <div class="col-md-3 service animate">
+                        <div class="service__icon">
+                            <i class="fa fa-road"></i>
+                        </div>
+                        <div class="service__header lobster-font">
+                            Полировка кузова
+                        </div>
                     </div>
-                    <div class="service__header lobster-font">
-                        Полировка кузова
-                    </div>
-                </div>
 
-                <div class="col-md-3 service animate">
-                    <div class="service__icon">
-                        <i class="fa fa-wrench"></i>
+                    <div class="col-md-3 service animate">
+                        <div class="service__icon">
+                            <i class="fa fa-wrench"></i>
+                        </div>
+                        <div class="service__header lobster-font">
+                            Вклейка стекол
+                        </div>
                     </div>
-                    <div class="service__header lobster-font">
-                        Вклейка стекол
-                    </div>
-                </div>
 
-                <div class="col-md-3 service animate">
-                    <div class="service__icon">
-                        <i class="fa fa-object-ungroup"></i>
-                    </div>
-                    <div class="service__header lobster-font">
-                        Шиномонтаж
+                    <div class="col-md-3 service animate">
+                        <div class="service__icon">
+                            <i class="fa fa-object-ungroup"></i>
+                        </div>
+                        <div class="service__header lobster-font">
+                            Шиномонтаж
+                        </div>
                     </div>
                 </div>
             </div>
@@ -284,6 +251,14 @@
             </div>
 
         </div>
+    </section>
+
+    <section class="section section-sasha-separator">
+
+        <div id="sasha" class="text-shadow parascroll">
+            <div class="scrollable"></div>
+        </div>
+
     </section>
 
     <section class="section google-map">
