@@ -31,8 +31,13 @@ define(['jquery', 'jqueryAppear', 'bootstrap', 'less', 'parascroll'], function (
         $(this).addClass('animate_visible');
     });
 
-    $('.parascroll').parascroll();
+    $('.section').parascroll();
 
+    $('#carcas_repair .service__icon').click(function() {
+        $('html, body').animate({
+            scrollTop: $("#carcas_repair_info").offset().top
+        }, 1000);
+    });
 });
 
 function initializeGoogleMap() {
