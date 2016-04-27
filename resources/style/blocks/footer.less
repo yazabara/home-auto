@@ -1,5 +1,4 @@
-@footer-color: white;
-
+@import "../constants";
 
 .footer {
   width: 100%;
@@ -9,8 +8,8 @@
   font-size: 20px;
   text-align: center;
   background: #606c88;
-  background: -webkit-linear-gradient(to left, #606c88, #3f4c6b);
-  background: linear-gradient(to left, #606c88, #3f4c6b);
+  background: -webkit-linear-gradient(to left, @main-background-color, @additional-background-color);
+  background: linear-gradient(to left, @main-background-color, @additional-background-color);
   .me-link {
     font-size: 2em;
     display: block;

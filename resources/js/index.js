@@ -1,5 +1,6 @@
 require.config({
     paths: {
+        pageheader: 'page-header',
         parascroll: '../../resources/js/vendor/jquery.parascroll',
         jquery: '../../bower_components/jquery/dist/jquery.min',
         jqueryAppear: '../../bower_components/jquery.appear/jquery.appear',
@@ -25,7 +26,7 @@ require.config({
     }
 });
 
-define(['jquery', 'jqueryAppear', 'bootstrap', 'less', 'parascroll'], function ($, jqueryAppear, bootstrap, less, parascroll) {
+define(['jquery', 'jqueryAppear', 'bootstrap', 'less', 'parascroll', 'pageheader'], function ($, jqueryAppear, bootstrap, less, parascroll, pageheader) {
 
     $('.animate').appear(function () {
         $(this).addClass('animate_visible');
@@ -38,6 +39,8 @@ define(['jquery', 'jqueryAppear', 'bootstrap', 'less', 'parascroll'], function (
             scrollTop: $("#carcas_repair_info").offset().top
         }, 1000);
     });
+
+    pageheader.init();
 });
 
 function initializeGoogleMap() {
